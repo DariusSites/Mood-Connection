@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+       <!---------------------Mobile HEADER------------>
+      <div class="mobile-navCONT">
+          <nav class="navbar navbar-dark  fixed-top">
+  <div id="mNav-innerCONT" class="container-fluid">
+    <button id="btn-togglerBorder" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span id="navtogIcon" class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header" id="mobileNav">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+      
+        </form>
+      </div>
+    </div>
+      <div class="mNav-Titles">
+    <span style="font-weight: bolder;">BIOME</span>
+    <span style="font-weight: lighter;">MOOD</span>
+      </div>
+  </div>
+</nav>
+      </div>
+<!------------------------------------------DESKTOP NAV ------------------------------------>
+<div class="dskNav-CONT">
+  <header class="p-3 text-bg-dark"> 
+  <div class="container"> 
+    <div class="d-flex flex-wrap align-items-center justify-content-center
+     justify-content-lg-start"> <a href="/" class="d-flex align-items-center 
+     mb-2 mb-lg-0 text-white text-decoration-none"> <svg class="bi me-2" 
+     width="40" height="32" role="img" aria-label="Bootstrap">
+     <use xlink:href="#bootstrap"></use></svg> </a>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center
+       mb-md-0"> <li><a href="#" class="nav-link px-2 text-secondary">Home</a>
+      </li> <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+       <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li> <li>
+        <a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">About</a></li> </ul> 
+   
+          <div class="text-end"> 
+            <div class="dskNav-btnCONT">
+               <button type="button" class="btn btn-outline-light me-2" id="dskHeader-BTN">Login</button> <button type="button" 
+            class="btn btn-warning" id="dskHeader-BTN">Sign-up</button>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+          </header>
+</div>
+<!-------------------------DISPLAY CONTENT SECTION ------------------------------------>
+        <article class="cont">
+            <h1>BIOMES</h1>
+            <h4 id="biomesTXT"></h4>
+            <div id="filter">filter</div>
+            <img class="coverCont" id="coverIMG" src="./cover.avif" alt="">
+              <img class="forestCont" id="forestIMG" src="./enviroments/forest.avif" alt="">
+                <img class="grasslandCont" id="grasslandIMG" src="./enviroments/grassland.avif" alt="">
+                  <img class="desertCont" id="desertIMG" src="./enviroments/desert.avif" alt="">
+                      <img class="tundraCont"  id="tundraIMG" src="./enviroments/tundra.avif" alt="">
+                    <!------------------------COVER INFO--------------->
+                      <div id="coverFact">
+                       <figure>
+                          <div class="coverDetails">
+                          <h5>Mood Link</h5>
+                  <p>
+                    Earth balance reflects harmony and peace. Just like our 
+                    emotions, Earth goes through storms, calm days, heat, 
+                    and cold — yet it still maintains balance to support 
+                    life. It reminds us that even with ups and downs, 
+                    stability comes from balance.
+                          </p>
+                        </div>
+                    
+                    
+                    </div>
+                      <!------------------------FOREST  INFO--------------->
+                    <div id="forestFact">
+                       <figure>
+                             <div class="forestDetails">
+                          <h5>Fact 1</h5>
+                          <p>Covers about one-third of Earth's land.</p>
+                        </div>
+
+                            
+                               <div class="forestDetails">
+                                   <h5>Fact 2</h5>
+                                    <p>The Amazon rainforest alone produces 20% of the world's oxygen.</p>
+                                </div>
+                           
+
+                         
+                                    <div class="forestDetails">
+                                      <h5>Mood Link</h5>
+                                    <p>Dense trees, layered canopies, and 
+                                        quiet paths create a feeling of 
+                                          concentration and reflection.</p>
+                               </div>
+                       </figure>
+                    </div>
+        <!-------------------------GRASSLAND ------------------------------------>
+                   <div id="grasslandFact">
+                       <figure>
+                             <div class="grassDetail">
+                          <h5>Fact 1</h5>
+                          <p>Known as the “breadbaskets of the world” because they grow most of our grains.</p>
+                        </div>
+
+                            
+                               <div class="grassDetail">
+                                   <h5>Fact 2</h5>
+                                    <p>Perfect habitat for large herds of grazing animals (bison, antelope, zebras).</p>
+                                </div>
+                           
+
+                         
+                                    <div class="grassDetail">
+                                      <h5>Mood Link</h5>
+                                    <p>So, grasslands “coincide” with peace because their openness, softness, and natural harmony naturally reflect the inner qualities of peace.</p>
+                               </div>
+                       </figure>
+                    </div>
+         <!-------------------------DESERT ------------------------------------>
+              <div id="desertFact">
+                       <figure>
+                             <div class="desertDetail">
+                          <h5>Fact 1</h5>
+                          <p>The driest biome, some deserts don't see rain for years.</p>
+                        </div>
+
+                            
+                               <div class="desertDetail">
+                                   <h5>Fact 2</h5>
+                                    <p>Temperature can swing from scorching hot by day to freezing at night.</p>
+                                </div>
+                           
+
+                         
+                                    <div class="desertDetail">
+                                      <h5>Mood Link</h5>
+                                    <p>The desert relates to anger because of its heat, intensity, unpredictability, and harshness, all of which echo how anger feels inside.</p>
+                               </div>
+                       </figure>
+                    </div>
+         <!-------------------------TUNDRA ------------------------------------>
+                     <div id="tundraFact">
+                       <figure>
+                             <div class="tundraDetail">
+                          <h5>Fact 1</h5>
+                          <p>Short summers allow wildflowers and moss to bloom.</p>
+                        </div>
+
+                            
+                               <div class="tundraDetail">
+                                   <h5>Fact 2</h5>
+                                    <p>Animals like polar bears, caribou, and arctic foxes are highly adapted to cold.</p>
+                                </div>
+                           
+
+                         
+                                    <div class="tundraDetail">
+                                      <h5>Mood Link</h5>
+                                    <p>The tundras relate to happiness with their beauty,light-filled resilience.Happiness isn't always loud, but it can be steady and glowing even in harsh conditions.</p>
+                               </div>
+                       </figure>
+        </article>
+<!-------------------------BUTTON SECTION ------------------------------------>
+        <section class="cont">
+            <h2>MOOD BUTTONS</h2>
+            <p class="moodQuestion">How Are You Feeling today?</p>
+            <aside>
+                <button id="focusBTN">FOCUS</button>
+                <button id="peaceBTN">PEACE</button>
+                <button id="angryBTN">ANGRY</button>
+                <button id="happyBTN">HAPPY</button>
+            </aside>
+        </section>
+<!-------------------------FOOTER ------------------------------------>
+        <footer>
+        <p class="ftTXT">"© 2025 Darius Arrington | @DariusSites | All Rights Reserved"</p>
+    </footer> 
+    </main>   
+
+    
+</body>
+<script src="action.js"></script>
+</html>
